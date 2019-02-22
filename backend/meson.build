@@ -23,6 +23,7 @@ backend_files = files(
 	'noop/backend.c',
 	'noop/output.c',
 	'rdp/backend.c',
+	'rdp/peer.c',
 	'rdp/listener.c',
 	'session/direct-ipc.c',
 	'session/session.c',
@@ -56,7 +57,10 @@ endif
 
 if freerdp.found()
 	backend_files += files('rdp/backend.c')
-	backend_deps += freerdp
+	backend_deps += [
+		freerdp,
+		winpr2
+	]
 endif
 
 subdir('x11')
