@@ -31,6 +31,7 @@ conf_data = configuration_data()
 conf_data.set10('WLR_HAS_LIBCAP', false)
 conf_data.set10('WLR_HAS_SYSTEMD', false)
 conf_data.set10('WLR_HAS_ELOGIND', false)
+conf_data.set10('WLR_HAS_RDP_BACKEND', false)
 conf_data.set10('WLR_HAS_X11_BACKEND', false)
 conf_data.set10('WLR_HAS_XWAYLAND', false)
 conf_data.set10('WLR_HAS_XCB_ERRORS', false)
@@ -146,6 +147,7 @@ summary = [
 	'     systemd: @0@'.format(conf_data.get('WLR_HAS_SYSTEMD', false)),
 	'     elogind: @0@'.format(conf_data.get('WLR_HAS_ELOGIND', false)),
 	'    xwayland: @0@'.format(conf_data.get('WLR_HAS_XWAYLAND', false)),
+	' rdp_backend: @0@'.format(conf_data.get('WLR_HAS_RDP_BACKEND', false)),
 	' x11_backend: @0@'.format(conf_data.get('WLR_HAS_X11_BACKEND', false)),
 	'   xcb-icccm: @0@'.format(conf_data.get('WLR_HAS_XCB_ICCCM', false)),
 	'  xcb-errors: @0@'.format(conf_data.get('WLR_HAS_XCB_ERRORS', false)),
