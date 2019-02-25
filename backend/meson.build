@@ -58,6 +58,7 @@ if freerdp.found()
 		'rdp/listener.c',
 		'rdp/output.c',
 		'rdp/peer.c',
+		'rdp/pointer.c',
 	)
 	backend_deps += [
 		freerdp,
