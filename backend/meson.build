@@ -55,6 +55,7 @@ endif
 if freerdp.found()
 	backend_files += files(
 		'rdp/backend.c',
+		'rdp/keyboard.c',
 		'rdp/listener.c',
 		'rdp/output.c',
 		'rdp/peer.c',
