@@ -1,6 +1,10 @@
 #ifdef __cplusplus
 extern "C" {
 #endif
+
+#ifdef __cplusplus
+extern "C" {
+#endif
 /*
  * This protocol is obsolete and will be removed in a future version. The
  * recommended replacement is xdg-shell.
@@ -184,6 +188,10 @@ void wlr_wl_shell_surface_for_each_surface(struct wlr_wl_shell_surface *surface,
 	wlr_surface_iterator_func_t iterator, void *user_data);
 
 #endif
+#ifdef __cplusplus
+}
+#endif
+
 #ifdef __cplusplus
 }
 #endif

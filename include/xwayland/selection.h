@@ -1,6 +1,10 @@
 #ifdef __cplusplus
 extern "C" {
 #endif
+
+#ifdef __cplusplus
+extern "C" {
+#endif
 #ifndef XWAYLAND_SELECTION_H
 #define XWAYLAND_SELECTION_H
 
@@ -75,6 +79,10 @@ void xwm_selection_init(struct wlr_xwm *xwm);
 void xwm_selection_finish(struct wlr_xwm *xwm);
 
 #endif
+#ifdef __cplusplus
+}
+#endif
+
 #ifdef __cplusplus
 }
 #endif

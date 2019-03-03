@@ -1,6 +1,10 @@
 #ifdef __cplusplus
 extern "C" {
 #endif
+
+#ifdef __cplusplus
+extern "C" {
+#endif
 /*
  * This an unstable interface of wlroots. No guarantees are made regarding the
  * future consistency of this API.
@@ -74,6 +78,10 @@ void wlr_pointer_gestures_v1_destroy(
 	struct wlr_pointer_gestures_v1 *pointer_gestures_v1);
 
 #endif
+#ifdef __cplusplus
+}
+#endif
+
 #ifdef __cplusplus
 }
 #endif

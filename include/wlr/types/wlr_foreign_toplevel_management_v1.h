@@ -1,6 +1,10 @@
 #ifdef __cplusplus
 extern "C" {
 #endif
+
+#ifdef __cplusplus
+extern "C" {
+#endif
 /*
  * This an unstable interface of wlroots. No guarantees are made regarding the
  * future consistency of this API.
@@ -121,6 +125,10 @@ void wlr_foreign_toplevel_handle_v1_set_activated(
 	struct wlr_foreign_toplevel_handle_v1 *toplevel, bool activated);
 
 #endif
+#ifdef __cplusplus
+}
+#endif
+
 #ifdef __cplusplus
 }
 #endif

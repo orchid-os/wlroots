@@ -1,6 +1,10 @@
 #ifdef __cplusplus
 extern "C" {
 #endif
+
+#ifdef __cplusplus
+extern "C" {
+#endif
 /*
  * This an unstable interface of wlroots. No guarantees are made regarding the
  * future consistency of this API.
@@ -72,6 +76,10 @@ void wlr_idle_notify_activity(struct wlr_idle *idle, struct wlr_seat *seat);
 void wlr_idle_set_enabled(struct wlr_idle *idle, struct wlr_seat *seat,
 	bool enabled);
 #endif
+#ifdef __cplusplus
+}
+#endif
+
 #ifdef __cplusplus
 }
 #endif

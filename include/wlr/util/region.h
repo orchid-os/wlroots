@@ -1,6 +1,10 @@
 #ifdef __cplusplus
 extern "C" {
 #endif
+
+#ifdef __cplusplus
+extern "C" {
+#endif
 /*
  * This is a stable interface of wlroots. Future changes will be limited to:
  *
@@ -57,6 +61,10 @@ bool wlr_region_confine(pixman_region32_t *region, double x1, double y1, double 
 	double y2, double *x2_out, double *y2_out);
 
 #endif
+#ifdef __cplusplus
+}
+#endif
+
 #ifdef __cplusplus
 }
 #endif

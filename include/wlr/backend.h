@@ -1,6 +1,10 @@
 #ifdef __cplusplus
 extern "C" {
 #endif
+
+#ifdef __cplusplus
+extern "C" {
+#endif
 /*
  * This an unstable interface of wlroots. No guarantees are made regarding the
  * future consistency of this API.
@@ -71,6 +75,10 @@ struct wlr_session *wlr_backend_get_session(struct wlr_backend *backend);
 clockid_t wlr_backend_get_presentation_clock(struct wlr_backend *backend);
 
 #endif
+#ifdef __cplusplus
+}
+#endif
+
 #ifdef __cplusplus
 }
 #endif

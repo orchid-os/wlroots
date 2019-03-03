@@ -1,6 +1,10 @@
 #ifdef __cplusplus
 extern "C" {
 #endif
+
+#ifdef __cplusplus
+extern "C" {
+#endif
 #ifndef TYPES_WLR_XDG_SHELL_V6_H
 #define TYPES_WLR_XDG_SHELL_V6_H
 
@@ -48,6 +52,10 @@ bool compare_xdg_surface_v6_toplevel_state(struct wlr_xdg_toplevel_v6 *state);
 void destroy_xdg_toplevel_v6(struct wlr_xdg_surface_v6 *surface);
 
 #endif
+#ifdef __cplusplus
+}
+#endif
+
 #ifdef __cplusplus
 }
 #endif

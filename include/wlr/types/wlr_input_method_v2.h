@@ -1,6 +1,10 @@
 #ifdef __cplusplus
 extern "C" {
 #endif
+
+#ifdef __cplusplus
+extern "C" {
+#endif
 /*
  * This an unstable interface of wlroots. No guarantees are made regarding the
  * future consistency of this API.
@@ -88,6 +92,10 @@ void wlr_input_method_v2_send_done(struct wlr_input_method_v2 *input_method);
 void wlr_input_method_v2_send_unavailable(
 	struct wlr_input_method_v2 *input_method);
 #endif
+#ifdef __cplusplus
+}
+#endif
+
 #ifdef __cplusplus
 }
 #endif

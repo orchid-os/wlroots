@@ -1,6 +1,10 @@
 #ifdef __cplusplus
 extern "C" {
 #endif
+
+#ifdef __cplusplus
+extern "C" {
+#endif
 #ifndef TYPES_WLR_TABLET_V2_H
 #define TYPES_WLR_TABLET_V2_H
 
@@ -94,6 +98,10 @@ struct wlr_tablet_seat_v2 *get_or_create_tablet_seat(
 	struct wlr_seat *wlr_seat);
 
 #endif /* TYPES_WLR_TABLET_V2_H */
+#ifdef __cplusplus
+}
+#endif
+
 #ifdef __cplusplus
 }
 #endif

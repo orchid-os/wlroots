@@ -1,6 +1,10 @@
 #ifdef __cplusplus
 extern "C" {
 #endif
+
+#ifdef __cplusplus
+extern "C" {
+#endif
 #ifndef ROOTSTON_VIEW_H
 #define ROOTSTON_VIEW_H
 #include <stdbool.h>
@@ -286,6 +290,10 @@ struct roots_subsurface *subsurface_create(struct roots_view *view,
 	struct wlr_subsurface *wlr_subsurface);
 
 #endif
+#ifdef __cplusplus
+}
+#endif
+
 #ifdef __cplusplus
 }
 #endif

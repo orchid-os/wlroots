@@ -1,6 +1,10 @@
 #ifdef __cplusplus
 extern "C" {
 #endif
+
+#ifdef __cplusplus
+extern "C" {
+#endif
 /*
  * Copyright © 2002 Keith Packard
  *
@@ -66,6 +70,10 @@ xcursor_load_theme(const char *theme, int size,
 		    void (*load_callback)(XcursorImages *, void *),
 		    void *user_data);
 #endif
+#ifdef __cplusplus
+}
+#endif
+
 #ifdef __cplusplus
 }
 #endif

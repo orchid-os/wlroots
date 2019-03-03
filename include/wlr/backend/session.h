@@ -1,6 +1,10 @@
 #ifdef __cplusplus
 extern "C" {
 #endif
+
+#ifdef __cplusplus
+extern "C" {
+#endif
 #ifndef WLR_BACKEND_SESSION_H
 #define WLR_BACKEND_SESSION_H
 
@@ -95,6 +99,10 @@ size_t wlr_session_find_gpus(struct wlr_session *session,
 	size_t ret_len, int *ret);
 
 #endif
+#ifdef __cplusplus
+}
+#endif
+
 #ifdef __cplusplus
 }
 #endif

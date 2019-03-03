@@ -1,6 +1,10 @@
 #ifdef __cplusplus
 extern "C" {
 #endif
+
+#ifdef __cplusplus
+extern "C" {
+#endif
 #ifndef ROOTSTON_CURSOR_H
 #define ROOTSTON_CURSOR_H
 
@@ -115,6 +119,10 @@ void roots_cursor_constrain(struct roots_cursor *cursor,
 	struct wlr_pointer_constraint_v1 *constraint, double sx, double sy);
 
 #endif
+#ifdef __cplusplus
+}
+#endif
+
 #ifdef __cplusplus
 }
 #endif

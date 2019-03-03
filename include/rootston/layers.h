@@ -1,6 +1,10 @@
 #ifdef __cplusplus
 extern "C" {
 #endif
+
+#ifdef __cplusplus
+extern "C" {
+#endif
 #ifndef ROOTSTON_LAYERS_H
 #define ROOTSTON_LAYERS_H
 #include <stdbool.h>
@@ -36,6 +40,10 @@ struct roots_output;
 void arrange_layers(struct roots_output *output);
 
 #endif
+#ifdef __cplusplus
+}
+#endif
+
 #ifdef __cplusplus
 }
 #endif

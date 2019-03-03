@@ -1,6 +1,10 @@
 #ifdef __cplusplus
 extern "C" {
 #endif
+
+#ifdef __cplusplus
+extern "C" {
+#endif
 /*
  * This an unstable interface of wlroots. No guarantees are made regarding the
  * future consistency of this API.
@@ -119,6 +123,10 @@ bool wlr_egl_swap_buffers(struct wlr_egl *egl, EGLSurface surface,
 bool wlr_egl_destroy_surface(struct wlr_egl *egl, EGLSurface surface);
 
 #endif
+#ifdef __cplusplus
+}
+#endif
+
 #ifdef __cplusplus
 }
 #endif

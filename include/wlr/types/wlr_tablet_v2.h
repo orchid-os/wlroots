@@ -1,6 +1,10 @@
 #ifdef __cplusplus
 extern "C" {
 #endif
+
+#ifdef __cplusplus
+extern "C" {
+#endif
 /*
  * This an unstable interface of wlroots. No guarantees are made regarding the
  * future consistency of this API.
@@ -331,6 +335,10 @@ void wlr_tablet_v2_start_grab(struct wlr_tablet_v2_tablet_pad *pad, struct wlr_t
 bool wlr_surface_accepts_tablet_v2(struct wlr_tablet_v2_tablet *tablet,
 	struct wlr_surface *surface);
 #endif /* WLR_TYPES_WLR_TABLET_V2_H */
+#ifdef __cplusplus
+}
+#endif
+
 #ifdef __cplusplus
 }
 #endif

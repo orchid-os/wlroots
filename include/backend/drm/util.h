@@ -1,6 +1,10 @@
 #ifdef __cplusplus
 extern "C" {
 #endif
+
+#ifdef __cplusplus
+extern "C" {
+#endif
 #ifndef BACKEND_DRM_UTIL_H
 #define BACKEND_DRM_UTIL_H
 
@@ -42,6 +46,10 @@ size_t match_obj(size_t num_objs, const uint32_t objs[restrict num_objs],
 		uint32_t out[restrict num_res]);
 
 #endif
+#ifdef __cplusplus
+}
+#endif
+
 #ifdef __cplusplus
 }
 #endif

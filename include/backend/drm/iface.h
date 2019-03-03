@@ -1,6 +1,10 @@
 #ifdef __cplusplus
 extern "C" {
 #endif
+
+#ifdef __cplusplus
+extern "C" {
+#endif
 #ifndef BACKEND_DRM_IFACE_H
 #define BACKEND_DRM_IFACE_H
 
@@ -42,6 +46,10 @@ extern const struct wlr_drm_interface atomic_iface;
 extern const struct wlr_drm_interface legacy_iface;
 
 #endif
+#ifdef __cplusplus
+}
+#endif
+
 #ifdef __cplusplus
 }
 #endif

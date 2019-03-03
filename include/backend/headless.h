@@ -1,6 +1,10 @@
 #ifdef __cplusplus
 extern "C" {
 #endif
+
+#ifdef __cplusplus
+extern "C" {
+#endif
 #ifndef BACKEND_HEADLESS_H
 #define BACKEND_HEADLESS_H
 
@@ -41,6 +45,10 @@ struct wlr_headless_backend *headless_backend_from_backend(
 	struct wlr_backend *wlr_backend);
 
 #endif
+#ifdef __cplusplus
+}
+#endif
+
 #ifdef __cplusplus
 }
 #endif

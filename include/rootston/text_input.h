@@ -1,6 +1,10 @@
 #ifdef __cplusplus
 extern "C" {
 #endif
+
+#ifdef __cplusplus
+extern "C" {
+#endif
 #ifndef ROOTSTON_TEXT_INPUT_H
 #define ROOTSTON_TEXT_INPUT_H
 
@@ -64,6 +68,10 @@ struct roots_text_input *roots_text_input_create(
 	struct wlr_text_input_v3 *text_input);
 
 #endif
+#ifdef __cplusplus
+}
+#endif
+
 #ifdef __cplusplus
 }
 #endif

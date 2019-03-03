@@ -1,6 +1,10 @@
 #ifdef __cplusplus
 extern "C" {
 #endif
+
+#ifdef __cplusplus
+extern "C" {
+#endif
 /*
  * This an unstable interface of wlroots. No guarantees are made regarding the
  * future consistency of this API.
@@ -38,6 +42,10 @@ typedef struct _drmModeModeInfo drmModeModeInfo;
 bool wlr_drm_connector_add_mode(struct wlr_output *output, const drmModeModeInfo *mode);
 
 #endif
+#ifdef __cplusplus
+}
+#endif
+
 #ifdef __cplusplus
 }
 #endif

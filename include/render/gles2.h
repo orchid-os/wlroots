@@ -1,6 +1,10 @@
 #ifdef __cplusplus
 extern "C" {
 #endif
+
+#ifdef __cplusplus
+extern "C" {
+#endif
 #ifndef RENDER_GLES2_H
 #define RENDER_GLES2_H
 
@@ -107,6 +111,10 @@ void pop_gles2_marker(void);
 #define POP_GLES2_DEBUG pop_gles2_marker()
 
 #endif
+#ifdef __cplusplus
+}
+#endif
+
 #ifdef __cplusplus
 }
 #endif

@@ -1,6 +1,10 @@
 #ifdef __cplusplus
 extern "C" {
 #endif
+
+#ifdef __cplusplus
+extern "C" {
+#endif
 #ifndef ROOTSTON_VIRTUAL_KEYBOARD_H
 #define ROOTSTON_VIRTUAL_KEYBOARD_H
 
@@ -8,6 +12,10 @@ extern "C" {
 
 void handle_virtual_keyboard(struct wl_listener *listener, void *data);
 #endif
+#ifdef __cplusplus
+}
+#endif
+
 #ifdef __cplusplus
 }
 #endif

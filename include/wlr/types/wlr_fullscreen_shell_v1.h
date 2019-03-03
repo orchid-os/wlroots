@@ -1,6 +1,10 @@
 #ifdef __cplusplus
 extern "C" {
 #endif
+
+#ifdef __cplusplus
+extern "C" {
+#endif
 /*
  * This an unstable interface of wlroots. No guarantees are made regarding the
  * future consistency of this API.
@@ -42,6 +46,10 @@ struct wlr_fullscreen_shell_v1 *wlr_fullscreen_shell_v1_create(
 void wlr_fullscreen_shell_v1_destroy(struct wlr_fullscreen_shell_v1 *shell);
 
 #endif
+#ifdef __cplusplus
+}
+#endif
+
 #ifdef __cplusplus
 }
 #endif

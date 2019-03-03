@@ -1,6 +1,10 @@
 #ifdef __cplusplus
 extern "C" {
 #endif
+
+#ifdef __cplusplus
+extern "C" {
+#endif
 /*
  * Copyright © 2012 Intel Corporation
  *
@@ -103,6 +107,10 @@ int wlr_xcursor_frame(struct wlr_xcursor *cursor, uint32_t time);
 const char *wlr_xcursor_get_resize_name(enum wlr_edges edges);
 
 #endif
+#ifdef __cplusplus
+}
+#endif
+
 #ifdef __cplusplus
 }
 #endif
