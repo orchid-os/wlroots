@@ -1,3 +1,6 @@
+#ifdef __cplusplus
+extern "C" {
+#endif
 /*
  * This an unstable interface of wlroots. No guarantees are made regarding the
  * future consistency of this API.
@@ -112,4 +115,7 @@ void wlr_keyboard_set_repeat_info(struct wlr_keyboard *kb, int32_t rate,
 void wlr_keyboard_led_update(struct wlr_keyboard *keyboard, uint32_t leds);
 uint32_t wlr_keyboard_get_modifiers(struct wlr_keyboard *keyboard);
 
+#endif
+#ifdef __cplusplus
+}
 #endif

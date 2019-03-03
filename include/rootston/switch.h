@@ -1,3 +1,6 @@
+#ifdef __cplusplus
+extern "C" {
+#endif
 #ifndef ROOTSTON_SWITCH_H
 #define ROOTSTON_SWITCH_H
 
@@ -15,4 +18,7 @@ struct roots_switch {
 void roots_switch_handle_toggle(struct roots_switch *lid_switch,
 		struct wlr_event_switch_toggle *event);
 
+#endif
+#ifdef __cplusplus
+}
 #endif

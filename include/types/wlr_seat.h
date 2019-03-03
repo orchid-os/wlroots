@@ -1,3 +1,6 @@
+#ifdef __cplusplus
+extern "C" {
+#endif
 #ifndef TYPES_WLR_SEAT_H
 #define TYPES_WLR_SEAT_H
 
@@ -20,4 +23,7 @@ void seat_client_create_touch(struct wlr_seat_client *seat_client,
 	uint32_t version, uint32_t id);
 void seat_client_destroy_touch(struct wl_resource *resource);
 
+#endif
+#ifdef __cplusplus
+}
 #endif

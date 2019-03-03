@@ -1,3 +1,6 @@
+#ifdef __cplusplus
+extern "C" {
+#endif
 /*
  * This an unstable interface of wlroots. No guarantees are made regarding the
  * future consistency of this API.
@@ -267,4 +270,7 @@ void wlr_data_source_dnd_finish(struct wlr_data_source *source);
 void wlr_data_source_dnd_action(struct wlr_data_source *source,
 	enum wl_data_device_manager_dnd_action action);
 
+#endif
+#ifdef __cplusplus
+}
 #endif

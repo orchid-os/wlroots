@@ -1,3 +1,6 @@
+#ifdef __cplusplus
+extern "C" {
+#endif
 /*
  * This an unstable interface of wlroots. No guarantees are made regarding the
  * future consistency of this API.
@@ -37,4 +40,7 @@ bool wlr_backend_is_headless(struct wlr_backend *backend);
 bool wlr_input_device_is_headless(struct wlr_input_device *device);
 bool wlr_output_is_headless(struct wlr_output *output);
 
+#endif
+#ifdef __cplusplus
+}
 #endif

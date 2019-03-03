@@ -1,3 +1,6 @@
+#ifdef __cplusplus
+extern "C" {
+#endif
 /*
  * This an unstable interface of wlroots. No guarantees are made regarding the
  * future consistency of this API.
@@ -41,4 +44,7 @@ void wlr_box_rotated_bounds(struct wlr_box *dest, const struct wlr_box *box, flo
 
 void wlr_box_from_pixman_box32(struct wlr_box *dest, const pixman_box32_t box);
 
+#endif
+#ifdef __cplusplus
+}
 #endif

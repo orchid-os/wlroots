@@ -1,3 +1,6 @@
+#ifdef __cplusplus
+extern "C" {
+#endif
 /*
  * This an unstable interface of wlroots. No guarantees are made regarding the
  * future consistency of this API.
@@ -47,4 +50,7 @@ void wlr_data_control_manager_v1_destroy(
 void wlr_data_control_device_v1_destroy(
 	struct wlr_data_control_device_v1 *device);
 
+#endif
+#ifdef __cplusplus
+}
 #endif

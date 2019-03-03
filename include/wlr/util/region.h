@@ -1,3 +1,6 @@
+#ifdef __cplusplus
+extern "C" {
+#endif
 /*
  * This is a stable interface of wlroots. Future changes will be limited to:
  *
@@ -53,4 +56,7 @@ void wlr_region_rotated_bounds(pixman_region32_t *dst, pixman_region32_t *src,
 bool wlr_region_confine(pixman_region32_t *region, double x1, double y1, double x2,
 	double y2, double *x2_out, double *y2_out);
 
+#endif
+#ifdef __cplusplus
+}
 #endif

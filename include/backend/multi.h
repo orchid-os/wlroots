@@ -1,3 +1,6 @@
+#ifdef __cplusplus
+extern "C" {
+#endif
 #ifndef BACKEND_MULTI_H
 #define BACKEND_MULTI_H
 
@@ -20,4 +23,7 @@ struct wlr_multi_backend {
 	} events;
 };
 
+#endif
+#ifdef __cplusplus
+}
 #endif

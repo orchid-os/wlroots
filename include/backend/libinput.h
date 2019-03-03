@@ -1,3 +1,6 @@
+#ifdef __cplusplus
+extern "C" {
+#endif
 #ifndef BACKEND_LIBINPUT_H
 #define BACKEND_LIBINPUT_H
 
@@ -103,4 +106,7 @@ void handle_tablet_pad_ring(struct libinput_event *event,
 void handle_tablet_pad_strip(struct libinput_event *event,
 		struct libinput_device *device);
 
+#endif
+#ifdef __cplusplus
+}
 #endif

@@ -1,3 +1,6 @@
+#ifdef __cplusplus
+extern "C" {
+#endif
 #ifndef ROOTSTON_KEYBOARD_H
 #define ROOTSTON_KEYBOARD_H
 
@@ -31,4 +34,7 @@ void roots_keyboard_handle_key(struct roots_keyboard *keyboard,
 
 void roots_keyboard_handle_modifiers(struct roots_keyboard *r_keyboard);
 
+#endif
+#ifdef __cplusplus
+}
 #endif

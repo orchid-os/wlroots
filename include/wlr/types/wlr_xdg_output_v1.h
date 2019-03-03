@@ -1,3 +1,6 @@
+#ifdef __cplusplus
+extern "C" {
+#endif
 /*
  * This an unstable interface of wlroots. No guarantees are made regarding the
  * future consistency of this API.
@@ -44,4 +47,7 @@ struct wlr_xdg_output_manager_v1 *wlr_xdg_output_manager_v1_create(
 		struct wl_display *display, struct wlr_output_layout *layout);
 void wlr_xdg_output_manager_v1_destroy(struct wlr_xdg_output_manager_v1 *manager);
 
+#endif
+#ifdef __cplusplus
+}
 #endif

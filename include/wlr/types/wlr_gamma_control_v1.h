@@ -1,3 +1,6 @@
+#ifdef __cplusplus
+extern "C" {
+#endif
 #ifndef WLR_TYPES_WLR_GAMMA_CONTROL_V1_H
 #define WLR_TYPES_WLR_GAMMA_CONTROL_V1_H
 
@@ -32,4 +35,7 @@ struct wlr_gamma_control_manager_v1 *wlr_gamma_control_manager_v1_create(
 void wlr_gamma_control_manager_v1_destroy(
 	struct wlr_gamma_control_manager_v1 *manager);
 
+#endif
+#ifdef __cplusplus
+}
 #endif

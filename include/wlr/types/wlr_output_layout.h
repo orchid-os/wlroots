@@ -1,3 +1,6 @@
+#ifdef __cplusplus
+extern "C" {
+#endif
 /*
  * This an unstable interface of wlroots. No guarantees are made regarding the
  * future consistency of this API.
@@ -130,4 +133,7 @@ struct wlr_output *wlr_output_layout_farthest_output(
 		struct wlr_output_layout *layout, enum wlr_direction direction,
 		struct wlr_output *reference, double ref_lx, double ref_ly);
 
+#endif
+#ifdef __cplusplus
+}
 #endif

@@ -1,3 +1,6 @@
+#ifdef __cplusplus
+extern "C" {
+#endif
 #ifndef XWAYLAND_SELECTION_H
 #define XWAYLAND_SELECTION_H
 
@@ -71,4 +74,7 @@ void xwm_seat_handle_start_drag(struct wlr_xwm *xwm, struct wlr_drag *drag);
 void xwm_selection_init(struct wlr_xwm *xwm);
 void xwm_selection_finish(struct wlr_xwm *xwm);
 
+#endif
+#ifdef __cplusplus
+}
 #endif

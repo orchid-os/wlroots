@@ -1,3 +1,6 @@
+#ifdef __cplusplus
+extern "C" {
+#endif
 /*
  * This an unstable interface of wlroots. No guarantees are made regarding the
  * future consistency of this API.
@@ -50,4 +53,7 @@ bool wlr_surface_is_subsurface(struct wlr_surface *surface);
 struct wlr_subsurface *wlr_subsurface_from_wlr_surface(
 	struct wlr_surface *surface);
 
+#endif
+#ifdef __cplusplus
+}
 #endif

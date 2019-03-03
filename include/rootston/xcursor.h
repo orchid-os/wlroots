@@ -1,3 +1,6 @@
+#ifdef __cplusplus
+extern "C" {
+#endif
 #ifndef ROOTSTON_XCURSOR_H
 #define ROOTSTON_XCURSOR_H
 
@@ -9,4 +12,7 @@
 #define ROOTS_XCURSOR_MOVE "grabbing"
 #define ROOTS_XCURSOR_ROTATE "grabbing"
 
+#endif
+#ifdef __cplusplus
+}
 #endif

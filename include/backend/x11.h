@@ -1,3 +1,6 @@
+#ifdef __cplusplus
+extern "C" {
+#endif
 #ifndef BACKEND_X11_H
 #define BACKEND_X11_H
 
@@ -88,4 +91,7 @@ void update_x11_pointer_position(struct wlr_x11_output *output,
 void handle_x11_configure_notify(struct wlr_x11_output *output,
 	xcb_configure_notify_event_t *event);
 
+#endif
+#ifdef __cplusplus
+}
 #endif

@@ -1,3 +1,6 @@
+#ifdef __cplusplus
+extern "C" {
+#endif
 /*
  * This an unstable interface of wlroots. No guarantees are made regarding the
  * future consistency of this API.
@@ -19,4 +22,7 @@ void wlr_touch_init(struct wlr_touch *touch,
 		struct wlr_touch_impl *impl);
 void wlr_touch_destroy(struct wlr_touch *touch);
 
+#endif
+#ifdef __cplusplus
+}
 #endif

@@ -1,3 +1,6 @@
+#ifdef __cplusplus
+extern "C" {
+#endif
 #ifndef BACKEND_NOOP_H
 #define BACKEND_NOOP_H
 
@@ -21,4 +24,7 @@ struct wlr_noop_output {
 struct wlr_noop_backend *noop_backend_from_backend(
 	struct wlr_backend *wlr_backend);
 
+#endif
+#ifdef __cplusplus
+}
 #endif

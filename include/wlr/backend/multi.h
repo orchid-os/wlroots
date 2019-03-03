@@ -1,3 +1,6 @@
+#ifdef __cplusplus
+extern "C" {
+#endif
 /*
  * This an unstable interface of wlroots. No guarantees are made regarding the
  * future consistency of this API.
@@ -33,4 +36,7 @@ bool wlr_multi_is_empty(struct wlr_backend *backend);
 void wlr_multi_for_each_backend(struct wlr_backend *backend,
 		void (*callback)(struct wlr_backend *backend, void *data), void *data);
 
+#endif
+#ifdef __cplusplus
+}
 #endif

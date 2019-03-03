@@ -1,3 +1,6 @@
+#ifdef __cplusplus
+extern "C" {
+#endif
 #ifndef UTIL_ARRAY_H
 #define UTIL_ARRAY_H
 
@@ -6,4 +9,7 @@
 
 size_t push_zeroes_to_end(uint32_t arr[], size_t n);
 
+#endif
+#ifdef __cplusplus
+}
 #endif

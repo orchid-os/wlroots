@@ -1,3 +1,6 @@
+#ifdef __cplusplus
+extern "C" {
+#endif
 /*
  * This an unstable interface of wlroots. No guarantees are made regarding the
  * future consistency of this API.
@@ -198,4 +201,7 @@ void wlr_cursor_map_to_region(struct wlr_cursor *cur, struct wlr_box *box);
 void wlr_cursor_map_input_to_region(struct wlr_cursor *cur,
 	struct wlr_input_device *dev, struct wlr_box *box);
 
+#endif
+#ifdef __cplusplus
+}
 #endif

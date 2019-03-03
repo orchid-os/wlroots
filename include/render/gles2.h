@@ -1,3 +1,6 @@
+#ifdef __cplusplus
+extern "C" {
+#endif
 #ifndef RENDER_GLES2_H
 #define RENDER_GLES2_H
 
@@ -103,4 +106,7 @@ void pop_gles2_marker(void);
 #define PUSH_GLES2_DEBUG push_gles2_marker(_wlr_strip_path(__FILE__), __func__)
 #define POP_GLES2_DEBUG pop_gles2_marker()
 
+#endif
+#ifdef __cplusplus
+}
 #endif

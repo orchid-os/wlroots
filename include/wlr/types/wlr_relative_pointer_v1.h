@@ -1,3 +1,6 @@
+#ifdef __cplusplus
+extern "C" {
+#endif
 /*
  * This an unstable interface of wlroots. No guarantees are made regarding the
  * future consistency of this API.
@@ -78,4 +81,7 @@ void wlr_relative_pointer_manager_v1_send_relative_motion(
 struct wlr_relative_pointer_v1 *wlr_relative_pointer_v1_from_resource(
 	struct wl_resource *resource);
 
+#endif
+#ifdef __cplusplus
+}
 #endif

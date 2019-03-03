@@ -1,3 +1,6 @@
+#ifdef __cplusplus
+extern "C" {
+#endif
 /*
  * This an unstable interface of wlroots. No guarantees are made regarding the
  * future consistency of this API.
@@ -56,4 +59,7 @@ void wlr_presentation_send_surface_presented(
 	struct wlr_presentation *presentation, struct wlr_surface *surface,
 	struct wlr_presentation_event *event);
 
+#endif
+#ifdef __cplusplus
+}
 #endif

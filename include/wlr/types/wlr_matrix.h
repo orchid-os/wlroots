@@ -1,3 +1,6 @@
+#ifdef __cplusplus
+extern "C" {
+#endif
 /*
  * This is a stable interface of wlroots. Future changes will be limited to:
  *
@@ -56,4 +59,7 @@ void wlr_matrix_project_box(float mat[9], const struct wlr_box *box,
 	enum wl_output_transform transform, float rotation,
 	const float projection[9]);
 
+#endif
+#ifdef __cplusplus
+}
 #endif

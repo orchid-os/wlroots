@@ -1,3 +1,6 @@
+#ifdef __cplusplus
+extern "C" {
+#endif
 /*
  * This protocol is obsolete and will be removed in a future version. The
  * recommended replacement is wlr-screencopy.
@@ -46,4 +49,7 @@ struct wlr_screenshot {
 struct wlr_screenshooter *wlr_screenshooter_create(struct wl_display *display);
 void wlr_screenshooter_destroy(struct wlr_screenshooter *screenshooter);
 
+#endif
+#ifdef __cplusplus
+}
 #endif

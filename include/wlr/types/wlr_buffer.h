@@ -1,3 +1,6 @@
+#ifdef __cplusplus
+extern "C" {
+#endif
 /*
  * This an unstable interface of wlroots. No guarantees are made regarding the
  * future consistency of this API.
@@ -68,4 +71,7 @@ void wlr_buffer_unref(struct wlr_buffer *buffer);
 struct wlr_buffer *wlr_buffer_apply_damage(struct wlr_buffer *buffer,
 	struct wl_resource *resource, pixman_region32_t *damage);
 
+#endif
+#ifdef __cplusplus
+}
 #endif

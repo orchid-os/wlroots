@@ -1,3 +1,6 @@
+#ifdef __cplusplus
+extern "C" {
+#endif
 #ifndef TYPES_WLR_DATA_DEVICE_H
 #define TYPES_WLR_DATA_DEVICE_H
 
@@ -39,4 +42,7 @@ struct wlr_seat_client *seat_client_from_data_device_resource(
  */
 void seat_client_send_selection(struct wlr_seat_client *seat_client);
 
+#endif
+#ifdef __cplusplus
+}
 #endif

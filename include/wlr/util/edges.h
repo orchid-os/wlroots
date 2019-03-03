@@ -1,3 +1,6 @@
+#ifdef __cplusplus
+extern "C" {
+#endif
 /*
  * This is a stable interface of wlroots. Future changes will be limited to:
  *
@@ -25,4 +28,7 @@ enum wlr_edges {
 	WLR_EDGE_RIGHT = 8,
 };
 
+#endif
+#ifdef __cplusplus
+}
 #endif

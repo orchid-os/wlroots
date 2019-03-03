@@ -1,3 +1,6 @@
+#ifdef __cplusplus
+extern "C" {
+#endif
 /*
  * This is a stable interface of wlroots. Future changes will be limited to:
  *
@@ -61,4 +64,7 @@ const char *_wlr_strip_path(const char *filepath);
 #define wlr_log_errno(verb, fmt, ...) \
 	wlr_log(verb, fmt ": %s", ##__VA_ARGS__, strerror(errno))
 
+#endif
+#ifdef __cplusplus
+}
 #endif

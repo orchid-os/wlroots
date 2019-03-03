@@ -1,3 +1,6 @@
+#ifdef __cplusplus
+extern "C" {
+#endif
 /*
  * This an unstable interface of wlroots. No guarantees are made regarding the
  * future consistency of this API.
@@ -21,4 +24,7 @@ struct wl_resource *wlr_region_create(struct wl_client *client,
 
 pixman_region32_t *wlr_region_from_resource(struct wl_resource *resource);
 
+#endif
+#ifdef __cplusplus
+}
 #endif

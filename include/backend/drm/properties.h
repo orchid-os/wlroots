@@ -1,3 +1,6 @@
+#ifdef __cplusplus
+extern "C" {
+#endif
 #ifndef BACKEND_DRM_PROPERTIES_H
 #define BACKEND_DRM_PROPERTIES_H
 
@@ -69,4 +72,7 @@ bool get_drm_plane_props(int fd, uint32_t id, union wlr_drm_plane_props *out);
 bool get_drm_prop(int fd, uint32_t obj, uint32_t prop, uint64_t *ret);
 void *get_drm_prop_blob(int fd, uint32_t obj, uint32_t prop, size_t *ret_len);
 
+#endif
+#ifdef __cplusplus
+}
 #endif

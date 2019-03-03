@@ -1,3 +1,6 @@
+#ifdef __cplusplus
+extern "C" {
+#endif
 #ifndef WLR_TYPES_WLR_XDG_DECORATION_V1
 #define WLR_TYPES_WLR_XDG_DECORATION_V1
 
@@ -66,4 +69,7 @@ uint32_t wlr_xdg_toplevel_decoration_v1_set_mode(
 	struct wlr_xdg_toplevel_decoration_v1 *decoration,
 	enum wlr_xdg_toplevel_decoration_v1_mode mode);
 
+#endif
+#ifdef __cplusplus
+}
 #endif

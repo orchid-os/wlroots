@@ -1,3 +1,6 @@
+#ifdef __cplusplus
+extern "C" {
+#endif
 /*
  * This an unstable interface of wlroots. No guarantees are made regarding the
  * future consistency of this API.
@@ -44,4 +47,7 @@ struct wlr_event_switch_toggle {
 	enum wlr_switch_state switch_state;
 };
 
+#endif
+#ifdef __cplusplus
+}
 #endif

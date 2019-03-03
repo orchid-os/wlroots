@@ -1,3 +1,6 @@
+#ifdef __cplusplus
+extern "C" {
+#endif
 #ifndef BACKEND_SESSION_DIRECT_IPC_H
 #define BACKEND_SESSION_DIRECT_IPC_H
 
@@ -9,4 +12,7 @@ void direct_ipc_dropmaster(int sock, int fd);
 void direct_ipc_finish(int sock, pid_t pid);
 int direct_ipc_init(pid_t *pid_out);
 
+#endif
+#ifdef __cplusplus
+}
 #endif
