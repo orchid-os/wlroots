@@ -179,7 +179,7 @@ static void handle_set_class(struct wl_listener *listener, void *data) {
 	struct roots_wl_shell_surface *roots_surface =
 		wl_container_of(listener, roots_surface, set_state);
 	view_set_app_id(&roots_surface->view,
-		roots_surface->wl_shell_surface->class);
+		roots_surface->wl_shell_surface->class_);
 }
 
 static void handle_surface_commit(struct wl_listener *listener, void *data) {
@@ -233,7 +233,7 @@ void handle_wl_shell_surface(struct wl_listener *listener, void *data) {
 	}
 
 	wlr_log(WLR_DEBUG, "new wl shell surface: title=%s, class=%s",
-		surface->title, surface->class);
+		surface->title, surface->class_);
 	wlr_wl_shell_surface_ping(surface);
 
 	struct roots_wl_shell_surface *roots_surface =
@@ -279,7 +279,7 @@ void handle_wl_shell_surface(struct wl_listener *listener, void *data) {
 	wlr_foreign_toplevel_handle_v1_set_title(roots_surface->view.toplevel_handle,
 		surface->title ?: "none");
 	wlr_foreign_toplevel_handle_v1_set_app_id(roots_surface->view.toplevel_handle,
-		surface->class ?: "none");
+		surface->class_ ?: "none");
 
 	if (surface->state == WLR_WL_SHELL_SURFACE_STATE_TRANSIENT) {
 		// We need to map it relative to the parent

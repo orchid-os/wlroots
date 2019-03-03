@@ -84,7 +84,7 @@ struct wlr_wl_shell_surface {
 	struct wl_list grab_link; // wlr_wl_shell_popup_grab::popups
 
 	char *title;
-	char *class;
+	char *class_;
 
 	struct wl_listener surface_destroy;
 

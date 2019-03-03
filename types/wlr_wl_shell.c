@@ -420,8 +420,8 @@ static void shell_surface_protocol_set_class(struct wl_client *client,
 		return;
 	}
 
-	free(surface->class);
-	surface->class = tmp;
+	free(surface->class_);
+	surface->class_ = tmp;
 
 	wlr_signal_emit_safe(&surface->events.set_class, surface);
 }
@@ -456,7 +456,7 @@ static void shell_surface_destroy(struct wlr_wl_shell_surface *surface) {
 	wl_event_source_remove(surface->ping_timer);
 	free(surface->transient_state);
 	free(surface->title);
-	free(surface->class);
+	free(surface->class_);
 	free(surface);
 }
 
