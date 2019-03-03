@@ -2,9 +2,6 @@
 extern "C" {
 #endif
 
-#ifdef __cplusplus
-extern "C" {
-#endif
 /*
  * This an unstable interface of wlroots. No guarantees are made regarding the
  * future consistency of this API.
@@ -56,9 +53,6 @@ struct wlr_primary_selection_v1_device_manager *
 void wlr_primary_selection_v1_device_manager_destroy(
 	struct wlr_primary_selection_v1_device_manager *manager);
 
-#endif
-#ifdef __cplusplus
-}
 #endif
 
 #ifdef __cplusplus

@@ -2,9 +2,6 @@
 extern "C" {
 #endif
 
-#ifdef __cplusplus
-extern "C" {
-#endif
 /*
  * This an unstable interface of wlroots. No guarantees are made regarding the
  * future consistency of this API.
@@ -31,9 +28,6 @@ struct wlr_texture *wlr_gles2_texture_from_wl_drm(struct wlr_egl *egl,
 struct wlr_texture *wlr_gles2_texture_from_dmabuf(struct wlr_egl *egl,
 	struct wlr_dmabuf_attributes *attribs);
 
-#endif
-#ifdef __cplusplus
-}
 #endif
 
 #ifdef __cplusplus

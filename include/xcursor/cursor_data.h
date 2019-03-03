@@ -2,9 +2,6 @@
 extern "C" {
 #endif
 
-#ifdef __cplusplus
-extern "C" {
-#endif
 /*
 * Copyright 1999 SuSE, Inc.
 *
@@ -559,9 +556,6 @@ static struct cursor_metadata {
 	{ "hand1", 13, 16, 12, 0, 2544 },
 	{ "watch", 16, 16, 15, 9, 2752 },
 };
-#ifdef __cplusplus
-}
-#endif
 
 #ifdef __cplusplus
 }

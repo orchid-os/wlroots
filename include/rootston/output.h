@@ -2,9 +2,6 @@
 extern "C" {
 #endif
 
-#ifdef __cplusplus
-extern "C" {
-#endif
 #ifndef ROOTSTON_OUTPUT_H
 #define ROOTSTON_OUTPUT_H
 #include <pixman.h>
@@ -89,9 +86,6 @@ void scale_box(struct wlr_box *box, float scale);
 void get_decoration_box(struct roots_view *view,
 	struct roots_output *output, struct wlr_box *box);
 
-#endif
-#ifdef __cplusplus
-}
 #endif
 
 #ifdef __cplusplus

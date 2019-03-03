@@ -2,9 +2,6 @@
 extern "C" {
 #endif
 
-#ifdef __cplusplus
-extern "C" {
-#endif
 #ifndef ROOTSTON_INPUT_H
 #define ROOTSTON_INPUT_H
 
@@ -41,9 +38,6 @@ struct roots_seat *input_last_active_seat(struct roots_input *input);
 
 void input_update_cursor_focus(struct roots_input *input);
 
-#endif
-#ifdef __cplusplus
-}
 #endif
 
 #ifdef __cplusplus

@@ -2,9 +2,6 @@
 extern "C" {
 #endif
 
-#ifdef __cplusplus
-extern "C" {
-#endif
 #ifndef _ROOTSTON_SERVER_H
 #define _ROOTSTON_SERVER_H
 
@@ -41,9 +38,6 @@ struct roots_server {
 
 extern struct roots_server server;
 
-#endif
-#ifdef __cplusplus
-}
 #endif
 
 #ifdef __cplusplus

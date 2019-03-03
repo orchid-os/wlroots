@@ -2,9 +2,6 @@
 extern "C" {
 #endif
 
-#ifdef __cplusplus
-extern "C" {
-#endif
 /*
  * This an unstable interface of wlroots. No guarantees are made regarding the
  * future consistency of this API.
@@ -66,9 +63,6 @@ void wlr_seat_request_set_primary_selection(struct wlr_seat *seat,
 void wlr_seat_set_primary_selection(struct wlr_seat *seat,
 	struct wlr_primary_selection_source *source, uint32_t serial);
 
-#endif
-#ifdef __cplusplus
-}
 #endif
 
 #ifdef __cplusplus

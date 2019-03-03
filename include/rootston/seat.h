@@ -2,9 +2,6 @@
 extern "C" {
 #endif
 
-#ifdef __cplusplus
-extern "C" {
-#endif
 #ifndef ROOTSTON_SEAT_H
 #define ROOTSTON_SEAT_H
 
@@ -187,9 +184,6 @@ void roots_seat_set_exclusive_client(struct roots_seat *seat,
 bool roots_seat_allow_input(struct roots_seat *seat,
 		struct wl_resource *resource);
 
-#endif
-#ifdef __cplusplus
-}
 #endif
 
 #ifdef __cplusplus

@@ -2,9 +2,6 @@
 extern "C" {
 #endif
 
-#ifdef __cplusplus
-extern "C" {
-#endif
 /*
  * This an unstable interface of wlroots. No guarantees are made regarding the
  * future consistency of this API.
@@ -29,9 +26,6 @@ void wlr_input_device_init(
 		const char *name, int vendor, int product);
 void wlr_input_device_destroy(struct wlr_input_device *dev);
 
-#endif
-#ifdef __cplusplus
-}
 #endif
 
 #ifdef __cplusplus

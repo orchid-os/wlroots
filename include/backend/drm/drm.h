@@ -2,9 +2,6 @@
 extern "C" {
 #endif
 
-#ifdef __cplusplus
-extern "C" {
-#endif
 #ifndef BACKEND_DRM_DRM_H
 #define BACKEND_DRM_DRM_H
 
@@ -169,9 +166,6 @@ bool set_drm_connector_gamma(struct wlr_output *output, size_t size,
 bool drm_connector_set_mode(struct wlr_output *output,
 	struct wlr_output_mode *mode);
 
-#endif
-#ifdef __cplusplus
-}
 #endif
 
 #ifdef __cplusplus

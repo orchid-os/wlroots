@@ -2,9 +2,6 @@
 extern "C" {
 #endif
 
-#ifdef __cplusplus
-extern "C" {
-#endif
 #ifndef ROOTSTON_DESKTOP_H
 #define ROOTSTON_DESKTOP_H
 #include <time.h>
@@ -114,9 +111,6 @@ void handle_wl_shell_surface(struct wl_listener *listener, void *data);
 void handle_layer_shell_surface(struct wl_listener *listener, void *data);
 void handle_xwayland_surface(struct wl_listener *listener, void *data);
 
-#endif
-#ifdef __cplusplus
-}
 #endif
 
 #ifdef __cplusplus

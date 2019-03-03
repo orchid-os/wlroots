@@ -2,9 +2,6 @@
 extern "C" {
 #endif
 
-#ifdef __cplusplus
-extern "C" {
-#endif
 #ifndef XWAYLAND_XWM_H
 #define XWAYLAND_XWM_H
 
@@ -163,9 +160,6 @@ char *xwm_get_atom_name(struct wlr_xwm *xwm, xcb_atom_t atom);
 bool xwm_atoms_contains(struct wlr_xwm *xwm, xcb_atom_t *atoms,
 	size_t num_atoms, enum atom_name needle);
 
-#endif
-#ifdef __cplusplus
-}
 #endif
 
 #ifdef __cplusplus

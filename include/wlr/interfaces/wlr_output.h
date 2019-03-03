@@ -2,9 +2,6 @@
 extern "C" {
 #endif
 
-#ifdef __cplusplus
-extern "C" {
-#endif
 /*
  * This an unstable interface of wlroots. No guarantees are made regarding the
  * future consistency of this API.
@@ -56,9 +53,6 @@ void wlr_output_send_frame(struct wlr_output *output);
 void wlr_output_send_present(struct wlr_output *output,
 	struct wlr_output_event_present *event);
 
-#endif
-#ifdef __cplusplus
-}
 #endif
 
 #ifdef __cplusplus

@@ -2,9 +2,6 @@
 extern "C" {
 #endif
 
-#ifdef __cplusplus
-extern "C" {
-#endif
 /*
  * This an unstable interface of wlroots. No guarantees are made regarding the
  * future consistency of this API.
@@ -87,9 +84,6 @@ void wlr_list_qsort(struct wlr_list *list,
 ssize_t wlr_list_find(struct wlr_list *list,
 	int compare(const void *item, const void *cmp_to), const void *cmp_to);
 
-#endif
-#ifdef __cplusplus
-}
 #endif
 
 #ifdef __cplusplus

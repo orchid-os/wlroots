@@ -2,9 +2,6 @@
 extern "C" {
 #endif
 
-#ifdef __cplusplus
-extern "C" {
-#endif
 #ifndef BACKEND_WAYLAND_H
 #define BACKEND_WAYLAND_H
 
@@ -96,9 +93,6 @@ void create_wl_keyboard(struct wl_keyboard *wl_keyboard, struct wlr_wl_backend *
 
 extern const struct wl_seat_listener seat_listener;
 
-#endif
-#ifdef __cplusplus
-}
 #endif
 
 #ifdef __cplusplus

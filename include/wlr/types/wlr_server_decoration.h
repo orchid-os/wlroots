@@ -2,9 +2,6 @@
 extern "C" {
 #endif
 
-#ifdef __cplusplus
-extern "C" {
-#endif
 /*
  * This protocol is obsolete and will be removed in a future version. The
  * recommended replacement is xdg-decoration.
@@ -90,9 +87,6 @@ void wlr_server_decoration_manager_set_default_mode(
 void wlr_server_decoration_manager_destroy(
 	struct wlr_server_decoration_manager *manager);
 
-#endif
-#ifdef __cplusplus
-}
 #endif
 
 #ifdef __cplusplus

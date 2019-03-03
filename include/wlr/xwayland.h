@@ -2,9 +2,6 @@
 extern "C" {
 #endif
 
-#ifdef __cplusplus
-extern "C" {
-#endif
 /*
  * This an unstable interface of wlroots. No guarantees are made regarding the
  * future consistency of this API.
@@ -264,9 +261,6 @@ bool wlr_xwayland_or_surface_wants_focus(
 	const struct wlr_xwayland_surface *surface);
 
 
-#endif
-#ifdef __cplusplus
-}
 #endif
 
 #ifdef __cplusplus

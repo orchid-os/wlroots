@@ -2,9 +2,6 @@
 extern "C" {
 #endif
 
-#ifdef __cplusplus
-extern "C" {
-#endif
 #ifndef ROOTSTON_CONFIG_H
 #define ROOTSTON_CONFIG_H
 
@@ -137,9 +134,6 @@ struct roots_keyboard_config *roots_config_get_keyboard(
 struct roots_cursor_config *roots_config_get_cursor(struct roots_config *config,
 	const char *seat_name);
 
-#endif
-#ifdef __cplusplus
-}
 #endif
 
 #ifdef __cplusplus

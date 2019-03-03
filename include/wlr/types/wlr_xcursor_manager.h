@@ -2,9 +2,6 @@
 extern "C" {
 #endif
 
-#ifdef __cplusplus
-extern "C" {
-#endif
 /*
  * This an unstable interface of wlroots. No guarantees are made regarding the
  * future consistency of this API.
@@ -73,9 +70,6 @@ struct wlr_xcursor *wlr_xcursor_manager_get_xcursor(
 void wlr_xcursor_manager_set_cursor_image(struct wlr_xcursor_manager *manager,
 	const char *name, struct wlr_cursor *cursor);
 
-#endif
-#ifdef __cplusplus
-}
 #endif
 
 #ifdef __cplusplus

@@ -2,9 +2,6 @@
 extern "C" {
 #endif
 
-#ifdef __cplusplus
-extern "C" {
-#endif
 #ifndef BACKEND_DRM_RENDERER_H
 #define BACKEND_DRM_RENDERER_H
 
@@ -63,9 +60,6 @@ struct gbm_bo *copy_drm_surface_mgpu(struct wlr_drm_surface *dest,
 	struct gbm_bo *src);
 bool export_drm_bo(struct gbm_bo *bo, struct wlr_dmabuf_attributes *attribs);
 
-#endif
-#ifdef __cplusplus
-}
 #endif
 
 #ifdef __cplusplus

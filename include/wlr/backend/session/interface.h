@@ -2,9 +2,6 @@
 extern "C" {
 #endif
 
-#ifdef __cplusplus
-extern "C" {
-#endif
 /*
  * This an unstable interface of wlroots. No guarantees are made regarding the
  * future consistency of this API.
@@ -26,9 +23,6 @@ struct session_impl {
 	bool (*change_vt)(struct wlr_session *session, unsigned vt);
 };
 
-#endif
-#ifdef __cplusplus
-}
 #endif
 
 #ifdef __cplusplus

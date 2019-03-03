@@ -2,9 +2,6 @@
 extern "C" {
 #endif
 
-#ifdef __cplusplus
-extern "C" {
-#endif
 /*
  * This an unstable interface of wlroots. No guarantees are made regarding the
  * future consistency of this API.
@@ -31,9 +28,6 @@ struct libinput_device *wlr_libinput_get_device_handle(
 bool wlr_backend_is_libinput(struct wlr_backend *backend);
 bool wlr_input_device_is_libinput(struct wlr_input_device *device);
 
-#endif
-#ifdef __cplusplus
-}
 #endif
 
 #ifdef __cplusplus

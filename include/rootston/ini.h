@@ -2,9 +2,6 @@
 extern "C" {
 #endif
 
-#ifdef __cplusplus
-extern "C" {
-#endif
 /* inih -- simple .INI file parser
 
 inih is released under the New BSD license (see LICENSE.txt). Go to the project
@@ -98,9 +95,6 @@ int ini_parse_stream(ini_reader reader, void* stream, ini_handler handler,
 #endif
 
 #endif /* __INI_H__ */
-#ifdef __cplusplus
-}
-#endif
 
 #ifdef __cplusplus
 }

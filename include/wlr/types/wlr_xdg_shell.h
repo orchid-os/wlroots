@@ -2,9 +2,6 @@
 extern "C" {
 #endif
 
-#ifdef __cplusplus
-extern "C" {
-#endif
 /*
  * This an unstable interface of wlroots. No guarantees are made regarding the
  * future consistency of this API.
@@ -395,9 +392,6 @@ uint32_t wlr_xdg_surface_schedule_configure(struct wlr_xdg_surface *surface);
 void wlr_xdg_surface_for_each_popup(struct wlr_xdg_surface *surface,
 	wlr_surface_iterator_func_t iterator, void *user_data);
 
-#endif
-#ifdef __cplusplus
-}
 #endif
 
 #ifdef __cplusplus

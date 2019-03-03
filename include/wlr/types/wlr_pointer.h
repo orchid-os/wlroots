@@ -2,9 +2,6 @@
 extern "C" {
 #endif
 
-#ifdef __cplusplus
-extern "C" {
-#endif
 /*
  * This an unstable interface of wlroots. No guarantees are made regarding the
  * future consistency of this API.
@@ -130,9 +127,6 @@ struct wlr_event_pointer_pinch_end {
 	bool cancelled;
 };
 
-#endif
-#ifdef __cplusplus
-}
 #endif
 
 #ifdef __cplusplus

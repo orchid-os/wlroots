@@ -2,9 +2,6 @@
 extern "C" {
 #endif
 
-#ifdef __cplusplus
-extern "C" {
-#endif
 /*
  * This an unstable interface of wlroots. No guarantees are made regarding the
  * future consistency of this API.
@@ -140,9 +137,6 @@ struct wlr_event_tablet_tool_button {
 	enum wlr_button_state state;
 };
 
-#endif
-#ifdef __cplusplus
-}
 #endif
 
 #ifdef __cplusplus

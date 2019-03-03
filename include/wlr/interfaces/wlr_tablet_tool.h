@@ -2,9 +2,6 @@
 extern "C" {
 #endif
 
-#ifdef __cplusplus
-extern "C" {
-#endif
 /*
  * This an unstable interface of wlroots. No guarantees are made regarding the
  * future consistency of this API.
@@ -26,9 +23,6 @@ void wlr_tablet_init(struct wlr_tablet *tablet,
 		struct wlr_tablet_impl *impl);
 void wlr_tablet_destroy(struct wlr_tablet *tablet);
 
-#endif
-#ifdef __cplusplus
-}
 #endif
 
 #ifdef __cplusplus

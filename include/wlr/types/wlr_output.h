@@ -2,9 +2,6 @@
 extern "C" {
 #endif
 
-#ifdef __cplusplus
-extern "C" {
-#endif
 /*
  * This an unstable interface of wlroots. No guarantees are made regarding the
  * future consistency of this API.
@@ -283,9 +280,6 @@ enum wl_output_transform wlr_output_transform_invert(
 enum wl_output_transform wlr_output_transform_compose(
 	enum wl_output_transform tr_a, enum wl_output_transform tr_b);
 
-#endif
-#ifdef __cplusplus
-}
 #endif
 
 #ifdef __cplusplus

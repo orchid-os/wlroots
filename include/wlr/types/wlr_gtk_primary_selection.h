@@ -2,9 +2,6 @@
 extern "C" {
 #endif
 
-#ifdef __cplusplus
-extern "C" {
-#endif
 /*
  * This protocol is obsolete and will be removed in a future version. The
  * recommended replacement is wp-primary-selection.
@@ -64,9 +61,6 @@ struct wlr_gtk_primary_selection_device_manager *
 void wlr_gtk_primary_selection_device_manager_destroy(
 	struct wlr_gtk_primary_selection_device_manager *manager);
 
-#endif
-#ifdef __cplusplus
-}
 #endif
 
 #ifdef __cplusplus

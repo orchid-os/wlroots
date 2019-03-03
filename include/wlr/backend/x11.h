@@ -2,9 +2,6 @@
 extern "C" {
 #endif
 
-#ifdef __cplusplus
-extern "C" {
-#endif
 #ifndef WLR_BACKEND_X11_H
 #define WLR_BACKEND_X11_H
 
@@ -54,9 +51,6 @@ bool wlr_output_is_x11(struct wlr_output *output);
  */
 void wlr_x11_output_set_title(struct wlr_output *output, const char *title);
 
-#endif
-#ifdef __cplusplus
-}
 #endif
 
 #ifdef __cplusplus
